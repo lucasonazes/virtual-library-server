@@ -5,12 +5,12 @@ const router = Router();
 
 router.get('/', books.getBooks);
 
-router.post('/', books.postBooks);
+router.get('/:id', books.getBook);
 
-router.patch('/', books.patchBooks);
+router.post('/', books.postBook);
 
-router.put('/', books.putBooks);
+router.patch('/:id', books.patchBook);
 
-router.delete('/', books.deleteBooks);
+router.delete('/:id', books.deleteBooks);
 
 module.exports = router;
