@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { getAllBooks, getBookById, insertBook, modifyBook, removeBook } = require('../services/book');
+const { getAllBooks, getBookById, insertBook, modifyBook, removeBook } = require('../services/books');
 
 function getBooks(req, res) {
     try {
@@ -13,7 +13,7 @@ function getBooks(req, res) {
 
 function getBook(req, res) {
     try {
-        const id = req.params.id
+        const id = req.params.id;
 
         if (id && Number(id)) {
             const book = getBookById(id);
@@ -31,10 +31,10 @@ function getBook(req, res) {
 
 function postBook(req, res) {
     try {
-        const body = req.params.body;
+        const body = req.body;
 
         if (body.name && body.id) {
-            insertBook(req.body);
+            insertBook(body);
             res.status(201);
             res.send('Book inserted successfully');
         } else {
@@ -50,8 +50,8 @@ function postBook(req, res) {
 
 function patchBook(req, res) {
     try {
-        const id = req.params.id
-        const body = req.params.body;
+        const id = req.params.id;
+        const body = req.body;
 
         if (id && Number(id)) {
             modifyBook(body, id);
@@ -69,7 +69,7 @@ function patchBook(req, res) {
 
 function deleteBooks(req, res) {
     try {
-        const id = req.params.id
+        const id = req.params.id;
 
         if (id && Number(id)) {
             removeBook(id);
