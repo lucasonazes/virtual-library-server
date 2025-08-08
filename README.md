@@ -14,7 +14,7 @@ This is a simple RESTful API for managing a virtual library and user favorites. 
 
 ---
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 app.js
