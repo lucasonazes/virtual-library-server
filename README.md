@@ -2,13 +2,17 @@
 
 This is a simple RESTful API for managing a virtual library and user favorites. The project is built with Node.js and Express, using JSON files for data storage.
 
-## Features
+---
+
+## 🚀 Features
 
 - List all books
 - Get details of a specific book
 - Add, modify, and delete books
 - List all favorite books
 - Add and remove books from favorites
+
+---
 
 ## Project Structure
 
@@ -28,14 +32,18 @@ services/
   favorites.js
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## 📋 Requirements
 
 - Node.js (v18 or higher recommended)
 - npm
 
-### Installation
+---
+
+## ⚡ Getting Started
+
+### Install dependencies
 
 1. Clone the repository.
 2. Run `npm install` to install dependencies.
@@ -48,7 +56,9 @@ node app.js
 
 The server will start on port `8000`.
 
-## API Endpoints
+---
+
+## 🗂️ API Endpoints
 
 ### Books
 
@@ -69,4 +79,8 @@ The server will start on port `8000`.
 - Books are stored in `books.json`.
 - Favorites are stored in `favorites.json`.
 
-##
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.
